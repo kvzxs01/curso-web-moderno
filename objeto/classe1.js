@@ -24,3 +24,10 @@ class cicloFinanceiro {
     return valorConsolidado;
   }
 }
+
+const salario = new lancamentos("salario", 45000);
+const contaDeLuz = new lancamentos("John", -220);
+
+const contas = new cicloFinanceiro(6, 2018);
+contas.addLancamentos(salario, contaDeLuz);
+console.log(contas.sumario());
