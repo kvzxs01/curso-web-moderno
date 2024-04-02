@@ -14,3 +14,11 @@ console.log(produto);
 //object. seal
 const pessoa = { nome: "juliana", idade: 35 };
 Object.seal(pessoa);
+console.log("selado:", Object.isSealed(pessoa));
+
+pessoa.sobrenome = "silva";
+delete pessoa.nome;
+pessoa.idade = 29;
+console.log(pessoa);
+
+//object.frezze = selado + valores constantes

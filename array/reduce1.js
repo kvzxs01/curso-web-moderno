@@ -6,20 +6,20 @@ const alunos = [
 ];
 
 console.log(alunos.map((a) => a.nota));
-const resultado = alunos
-  .map((a) => a.nota)
-  .reduce(function (acumulador, atual) {
-    return acumulador + atual;
-  }, 0);
+const resultado = alunos;
+alunos.map((a) => a.nota);
+alunos.reduce(function (acumulador, atual) {
+  return acumulador + atual;
+}, 0);
 
 console.log(resultado);
 
-const resultado2 = alunos
+const resultado2 = alunos;
 
-  .map((a) => a.nota)
+alunos.map((a) => a.nota);
 
-  .reduce((acumulador, atual) => {
-    return acumulador + atual;
-  });
+alunos.reduce((acumulador, atual) => {
+  return acumulador + atual;
+});
 
 console.log(resultado2);
